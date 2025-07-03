@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias de Chocolate - Cupcakes Artesanais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍫 Delícias de Chocolate 🧁</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>O sabor que derrete na boca!</h2>
+                <p>Cupcakes artesanais feitos com os melhores ingredientes e muito amor.</p>
+                <button class="cta-button" onclick="location.href='#cardapio'">Ver Cardápio</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Na Delícias de Chocolate, acreditamos que cada cupcake é uma pequena obra de arte comestível. Usamos apenas chocolate de alta qualidade, ovos frescos e ingredientes selecionados para criar sabores inesquecíveis. Nossa paixão é levar um momento de pura doçura para o seu dia!</p>
+                <img src="images/bakery.jpg" alt="Nossa padaria" class="about-image">
+            </div>
+        </section>
+
+        <section id="cardapio" class="menu">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/classic-chocolate.jpg" alt="Cupcake Chocolate Clássico">
+                        <h3>Chocolate Clássico</h3>
+                        <p>A combinação perfeita de massa fofinha de chocolate e cobertura cremosa de ganache.</p>
+                        <span>R$ 8,00</span>
+                        <button class="add-to-cart" data-name="Chocolate Clássico" data-price="8.00">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/chocolate-brigadeiro.jpg" alt="Cupcake Chocolate com Brigadeiro">
+                        <h3>Chocolate com Brigadeiro</h3>
+                        <p>Deliciosa massa de chocolate com recheio e cobertura generosa de brigadeiro tradicional.</p>
+                        <span>R$ 9,50</span>
+                        <button class="add-to-cart" data-name="Chocolate com Brigadeiro" data-price="9.50">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/red-velvet.jpg" alt="Cupcake Red Velvet com Chocolate Branco">
+                        <h3>Red Velvet com Chocolate Branco</h3>
+                        <p>Massa vermelha aveludada com gotas de chocolate e cobertura suave de cream cheese e chocolate branco.</p>
+                        <span>R$ 10,00</span>
+                        <button class="add-to-cart" data-name="Red Velvet com Chocolate Branco" data-price="10.00">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/chocolate-nutella.jpg" alt="Cupcake Chocolate com Nutella">
+                        <h3>Chocolate com Nutella</h3>
+                        <p>Massa de chocolate com um recheio irresistível de Nutella e cobertura de chantilly com raspas de chocolate.</p>
+                        <span>R$ 11,00</span>
+                        <button class="add-to-cart" data-name="Chocolate com Nutella" data-price="11.00">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2>Nossas Criações</h2>
+                <div class="gallery-images">
+                    <img src="images/gallery1.jpg" alt="Cupcake decorado">
+                    <img src="images/gallery2.jpg" alt="Mesa de cupcakes">
+                    <img src="images/gallery3.jpg" alt="Cupcake com recheio">
+                    <img src="images/gallery4.jpg" alt="Detalhe do cupcake">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p>Gostaria de fazer uma encomenda ou tirar alguma dúvida? Entre em contato!</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> (41) 99876-5432</p>
+                    <p><i class="fas fa-envelope"></i> contato@deliciasdechocolate.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua dos Doces, 123 - Curitiba, PR</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Delícias de Chocolate. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
